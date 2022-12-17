@@ -19,13 +19,13 @@ The function must return a pair (C,route), where,
 2. route is a list of numbers from the set {0, . . . , n − 1} such that route[0] is s, route[len(route)-1] is t, and for each i, there exists a link of capacity at least C between route[i-1] and route[i].
 
 Example Test Cases
->>> findMaxCapacity(3,[(0,1,1),(1,2,1)],0,1)
+findMaxCapacity(3,[(0,1,1),(1,2,1)],0,1)
 (1,[0,1]) 
->>> findMaxCapacity(4,[(0,1,30),(0,3,10),(1,2,40),(2,3,50),(0,1,60),(1,3,50)],0,3)
+findMaxCapacity(4,[(0,1,30),(0,3,10),(1,2,40),(2,3,50),(0,1,60),(1,3,50)],0,3)
 (50,[0,1,3])
->>> findMaxCapacity(4,[(0,1,30),(1,2,40),(2,3,50),(0,3,10)],0,3)
+findMaxCapacity(4,[(0,1,30),(1,2,40),(2,3,50),(0,3,10)],0,3)
 (30,[0,1,2,3])
->>> findMaxCapacity(5,[(0,1,3),(1,2,5),(2,3,2),(3,4,3),(4,0,8),(0,3,7),(1,3,4)],0,2)
+findMaxCapacity(5,[(0,1,3),(1,2,5),(2,3,2),(3,4,3),(4,0,8),(0,3,7),(1,3,4)],0,2)
 (4,[0,3,1,2])
->>> findMaxCapacity(7,[(0,1,2),(0,2,5),(1,3,4), (2,3,4),(3,4,6),(3,5,4),(2,6,1),(6,5,2)],0,5)
+findMaxCapacity(7,[(0,1,2),(0,2,5),(1,3,4), (2,3,4),(3,4,6),(3,5,4),(2,6,1),(6,5,2)],0,5)
 (4,[0, 2, 3, 5])
